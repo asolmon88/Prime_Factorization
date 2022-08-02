@@ -1,0 +1,31 @@
+procedure calculate_prime_factors(value, matrix, index):
+  if value is_different from 1 or 0:
+    add_factors(value, 2, matrix, index)
+
+    for odd_numbers = 3 stop_when odd_numbers <= sqrt(value) 
+      increment odd_numbers by 2:
+      add_factors(value, odd_numbers, matrix, index)
+    end for
+
+    if value > 2:
+      add value to matrix in index
+    end if
+  end if
+  else
+    add -1 to matrix in index
+  end else
+end procedure
+
+procedure add_factors(current_value, current_factor, matrix, index) do
+  declare exponent := 0
+  while current_value divisible by current_factor:
+    if exponent equals 0:
+      add current_factor to matrix in index
+      set exponent to 1
+    else
+      increment exponent by 1
+    end if
+    current_value = current_value/current_factor
+  end while
+  add exponent to matrix in index
+end procedure

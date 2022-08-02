@@ -1,0 +1,19 @@
+reader data:
+  opened file
+  array of values
+
+procedure read_file():
+  current_number = 0
+  while current_number:
+    save_number_in_current_file_line in current_number
+    if number_saved_sucessfull:
+      add current_number to values
+    end if
+  end while
+  if values_count > 0:
+    return success
+  end if
+  else:
+    return failure
+  end else
+end procedure

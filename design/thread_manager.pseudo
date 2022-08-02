@@ -1,0 +1,26 @@
+procedure create_threads(thread_count, matrix, values) do
+  initialize array of threads with thread_count
+  create array of private variables with thread_count
+  // dynamic mapping
+  shared next_work_unit := 0
+  shared can_access_next_unit := create_mutex()
+
+  for index := 0 to thread_count do
+    create_thread(threads in index, distribute_work, private_data)
+  end
+end procedure
+
+procedure distribute_work(private_data) do
+  while (true) do
+    lock(can_access_next_unit)
+      private my_unit = next_work_unit
+      next_work_unit = next_work_unit + 1
+    unlock(can_access_next_unit)
+    if (my_unit < values_count) do
+      calculate_prime_factors(value in index, matrix, index)
+    end
+    else do
+      break
+    end
+  end
+end

@@ -1,0 +1,7 @@
+procedure print_results(values, matrix):
+  for value in values:
+    for factors in matrix:
+      print "value: factors"
+    end for
+  end for
+end procedure

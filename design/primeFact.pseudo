@@ -1,0 +1,11 @@
+procedure main(argc, argv[]):
+  create thread_count as result of converting argv[1] to integer
+  thread_count := integer(argv[1])
+  initialize shared data_structure values
+  initialize a reader with file, values
+  read_file()
+  shared create_matrix(row_size: values_count, column: data_satructure)
+  create_threads(thread_count, matrix, values) from thread_manager
+  print_results(matrix) or save_results(matrix)
+
+end procedure
