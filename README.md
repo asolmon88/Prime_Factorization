@@ -109,4 +109,4 @@ The number 100 specifies 100 threads to be used.
 
 **Author:** Ariel Solis Monge
 
-**Contact:** ariel.solismonge@ucr.ac.cr
+**Contact:**
